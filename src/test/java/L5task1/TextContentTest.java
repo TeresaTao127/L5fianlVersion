@@ -9,9 +9,13 @@ class TextContentTest {
 
     @Test
     void ShouldBeAPalindrome() {
-        String text="radar";
-        String reversedText = new StringBuilder(text).reverse().toString();
-        Assertions.assertEquals(text,reversedText);
 
+        Assertions.assertTrue(TextContent.isPalindrome("radar"));
+    }
+
+    @Test
+    void ShouldNotBeAPalindrome() {
+
+        Assertions.assertFalse(TextContent.isPalindrome("fish"));
     }
 }

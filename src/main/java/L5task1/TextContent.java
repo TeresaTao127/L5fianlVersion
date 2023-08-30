@@ -18,10 +18,9 @@ public class TextContent {
         } else {
             System.out.println("The text is not a palindrome.");
         }
-
     }
 
-    private static boolean isPalindrome(String content) {
+    public static boolean isPalindrome(String content) {
         String reversedText = new StringBuilder(content).reverse().toString();
         return content.equals(reversedText);
     }
