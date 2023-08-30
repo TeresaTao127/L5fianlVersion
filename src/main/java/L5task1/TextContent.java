@@ -2,7 +2,7 @@ package L5task1;
 
 public class TextContent {
     public static void main(String[] args) {
-        String filePath = "src\\main\\resources\\text";
+        String filePath = "C:\\Users\\tl\\IdeaProjects\\L5task\\src\\main\\resources\\textPalindrome";
 
         String content = FileUtils.readFromFile(filePath);
 
